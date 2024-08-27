@@ -2,42 +2,113 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap Workshop</title>
+  <meta charset="UTF-8">
+  <title>Responsive Layout</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #fef5e2; /* Color de fondo similar al de las imágenes */
+    }
+
+    /* Ocultar ambas imágenes por defecto */
+    .desktop-img,
+    .mobile-img {
+      display: none;
+    }
+
+    /* Mostrar imagen para computadoras en pantallas grandes */
+    @media (min-width: 992px) {
+      .desktop-img {
+        display: block;
+      }
+    }
+
+    /* Mostrar imagen para móviles en pantallas pequeñas */
+    @media (max-width: 991px) {
+      .mobile-img {
+        display: block;
+      }
+    }
+
+    /* Estilo personalizado para las tarjetas */
+    .card {
+      background-color: #FFF6ED; /* Fondo de la tarjeta */
+      border-radius: 10px;
+      border: none;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #1A1A1A; /* Color del título */
+    }
+
+    .card-subtitle {
+      font-size: 0.875rem;
+      color: #6c757d; /* Color del subtítulo */
+    }
+
+    .card-text {
+      color: #4A4A4A; /* Color del texto */
+    }
+
+    .text-success {
+      color: #18825A !important; /* Color del precio */
+    }
+
+    .btn-success {
+      background-color: #18825A; /* Color del botón */
+      border: none;
+    }
+
+    .btn-success:hover {
+      background-color: #145743; /* Color del botón en hover */
+    }
+  </style>
 </head>
 
-<body>
-  Your Result
-  76
-  of 100
+<body class="d-flex justify-content-center align-items-center vh-100">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <!-- Imagen para dispositivos de escritorio -->
+  <div class="desktop-img card" style="max-width: 600px;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="perfume1.png" alt="Gabrielle Essence Eau De Parfum" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center p-3">
+        <h6 class="card-subtitle mb-2">Perfume</h6>
+        <h5 class="card-title">Gabrielle Essence Eau De Parfum</h5>
+        <p class="card-text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <!-- Alineación en fila de los precios -->
+        <div class="d-flex align-items-center justify-content-center" style="width: 100%; max-width: 250px;">
+          <h4 class="text-success mb-0" style="flex-basis: auto; min-width: 0;">$149.99</h4>
+          <p class="text-muted mb-0 ms-2" style="flex-basis: auto; min-width: 0;"><s>$169.99</s></p>
+        </div>
+        <a href="#" class="btn btn-success mt-3">🛒Add to Cart</a>
+      </div>
+    </div>
+  </div>
 
-  Summary
+  <!-- Imagen para dispositivos móviles -->
+  <div class="mobile-img card text-center" style="max-width: 400px;">
+    <img src="perfume2.png" alt="Gabrielle Essence Eau De Parfum" class="img-fluid rounded-top">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2">Perfume</h6>
+      <h5 class="card-title">Gabrielle Essence Eau De Parfum</h5>
+      <p class="card-text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <!-- Alineación en fila de los precios -->
+      <div class="d-flex align-items-center justify-content-center" style="width: 100%; max-width: 250px;">
+        <h4 class="text-success mb-0" style="flex-basis: auto; min-width: 0;">$149.99</h4>
+        <p class="text-muted mb-0 ms-2" style="flex-basis: auto; min-width: 0;"><s>$169.99</s></p>
+      </div>
+      <a href="#" class="btn btn-success mt-3">🛒Add to Cart</a>
+    </div>
+  </div>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-
-
-  <!-- No elimine este tag -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
+
+
+

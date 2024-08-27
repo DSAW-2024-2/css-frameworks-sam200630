@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/U1bmlN1t)
 # Reto de HTML y CSS con Bootstrap y TailwindCSS
 
 ![Design preview for the Results summary component coding challenge](./assets/design/desktop-preview.jpg)
@@ -46,3 +47,7 @@ El objetivo de este taller es hacer que la página que ya desarrollamos se vea c
 - [Documentación de Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 - [Documentación de TailwindCSS](https://tailwindcss.com/docs)
 - [Guía de diseño web responsive](https://www.w3schools.com/html/html_responsive.asp)
+
+
+link bootstrap: https://dsaw-2024-2.github.io/css-frameworks-sam200630/bootstrap-workshop
+link tailwind: https://dsaw-2024-2.github.io/css-frameworks-sam200630/tailwindcss-workshop
