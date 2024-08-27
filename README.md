@@ -47,3 +47,7 @@ El objetivo de este taller es hacer que la página que ya desarrollamos se vea c
 - [Documentación de Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 - [Documentación de TailwindCSS](https://tailwindcss.com/docs)
 - [Guía de diseño web responsive](https://www.w3schools.com/html/html_responsive.asp)
+
+
+link bootstrap: https://dsaw-2024-2.github.io/css-frameworks-sam200630/bootstrap-workshop
+link tailwind: https://dsaw-2024-2.github.io/css-frameworks-sam200630/tailwindcss-workshop
